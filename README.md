@@ -24,7 +24,7 @@ Deploying is pretty much straight forward and is divided into several steps as f
 
 - Clone this repo:
 ```
-git clone https://github.com/lzzy12/python-aria-mirror-bot mirror-bot/
+git clone https://github.com/NandiyaLive/python-aria-mirror-bot mirror-bot/
 cd mirror-bot
 ```
 
@@ -39,6 +39,10 @@ Install Docker by following the [official docker docs](https://docs.docker.com/e
 - For Arch and it's derivatives:
 ```
 sudo pacman -S docker python
+```
+Install requirements
+```
+pip3 install -r requirements.txt
 ```
 
 ## Setting up config file
