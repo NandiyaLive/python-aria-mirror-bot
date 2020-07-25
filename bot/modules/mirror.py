@@ -114,9 +114,9 @@ class MirrorListener(listeners.MirrorListeners):
             LOGGER.info(f'Done Uploading {download_dict[self.uid].name()}')
             if INDEX_URL is not None:
                 share_url = requests.utils.requote_uri(f'{INDEX_URL}/{download_dict[self.uid].name()}')
-                if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
+                if os.path.isdir(f'<b>You have no access to the Cloud URL so please use the Index URL 🤒</b>\n\n{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
                     share_url += '/'
-                msg += f'\n\nIndex URL: <a href="{share_url}">here</a>\n<b>You have no access to the Cloud URL so please use the Index URL 🤒</b>'
+                msg += f'\nIndex URL: <a href="{share_url}">here</a>'
             if self.tag is not None:
                 msg += f'\ncc: @{self.tag}'
             try:
